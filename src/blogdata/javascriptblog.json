@@ -1,0 +1,8 @@
+{
+    "title":"How to learn javascript",
+    "content":"<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <title>Hello, World!<\/title>\r\n    <link rel=\"stylesheet\" href=\"styles.css\" \/>\r\n  <\/head>\r\n  <body>\r\n      <h1 class=\"title\">Hello World! <\/h1>\r\n      <p id=\"currentTime\">Next.js is a powerful React-based framework that enables developers to build server-rendered web applications with ease. It's designed to simplify the development process by providing a set of features that are not available out of the box in React, such as server-side rendering, static site generation, and automatic code splitting. Next.js is developed by Vercel and is known for its performance and SEO benefits.<\/p>\r\n      <script src=\"script.js\"><\/script>\r\n  <\/body>\r\n<\/html>",
+    "author":"Brendan Eich",
+    "metaDesc":"How to learn javascript,you will learn javascript in very few minutes",
+    "slugs":"javascriptblog"
+    
+}

@@ -1,0 +1,18 @@
+.blogmain{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    /* align-items: center; */
+}
+.blogitem{
+    margin:2rem 0;
+    padding: 0px 20px;
+}
+.slugcontainer{
+    margin:4rem 2rem;
+    padding: 10px 20px;
+}
+.slugcontainer P{
+    margin: 5px 5px;
+}

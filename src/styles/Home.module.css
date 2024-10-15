@@ -122,6 +122,40 @@ a.secondary {
     text-underline-offset: 4px;
   }
 }
+.mainnav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background-color: rgb(126 34 206);
+  box-sizing: border-box;
+}
+.mainnav ul{
+  display: flex;
+  gap: 100px;
+  
+}
+.mainnav ul li{
+  list-style: none;
+  color:#f2f2f2;
+  position: relative;
+  padding: 10px 0;
+
+}
+.mainnav ul li::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #f2f2f2; /* Border color */
+  transition: width 0.3s ease; /* Transition for smooth animation */
+}
+
+.mainnav ul  li:hover::before {
+  width: 100%; /* Expands the border from left to right on hover */
+}
 
 @media (max-width: 600px) {
   .page {
