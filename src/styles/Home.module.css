@@ -124,11 +124,12 @@ a.secondary {
 }
 .mainnav{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 70px;
   background-color: rgb(126 34 206);
   box-sizing: border-box;
+  padding: 10px;
 }
 .mainnav ul{
   display: flex;
@@ -157,6 +158,30 @@ a.secondary {
   width: 100%; /* Expands the border from left to right on hover */
 }
 
+.sidebar {
+  position: absolute;
+  top: 69px;
+  height: 100vh;
+  width: 120px;
+  background-color: rgb(126 34 206);
+  left: -100%; /* Sidebar hidden by default */
+  transition: left 0.3s ease; /* Smooth transition */
+}
+
+.sidebar.active {
+  left: 0px; /* Sidebar slides in */
+}
+.sidebarUl li{
+  padding: 10px;
+  color: white;
+  list-style: none;
+
+  font-size: 14px;
+}
+.navbarhambergerAndClose{
+  display: flex; 
+  justify-content: flex-end;
+}
 @media (max-width: 600px) {
   .page {
     padding: 32px;

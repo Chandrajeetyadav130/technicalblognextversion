@@ -7,10 +7,10 @@ export default function handler(req, res) {
     let files = fs.readdirSync(filePath);
     
     // Get the count from query, with default value
-    const count = parseInt(req.query.count) || 2;
+    // const count = parseInt(req.query.count) || 2;
     
     // Slice the files array to return the next batch of blogs
-    files = files.slice(0, count);
+    // files = files.slice(0, count);
 
     for (let i = 0; i < files.length; i++) {
       const item = files[i];
