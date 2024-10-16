@@ -41,6 +41,13 @@ export async function getStaticPaths() {
       { params: { slugs: 'javascriptblog' } },
       { params: { slugs: 'nextjsblog' } },
       { params: { slugs: 'reactjsblog' } },
+      { params: { slugs: 'typecriptblog' } },
+      { params: { slugs: 'pythonblog' } },
+      { params: { slugs: 'mongodbblog' } },
+      { params: { slugs: 'htmlblog' } },
+      { params: { slugs: 'es6blog' } },
+      { params: { slugs: 'cssblog' } },
+
     ],
   
     fallback: false, // false or "blocking"
