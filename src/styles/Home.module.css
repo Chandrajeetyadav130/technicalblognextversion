@@ -163,7 +163,9 @@ a.secondary {
 .mainnav ul  li:hover::before {
   width: 100%; /* Expands the border from left to right on hover */
 }
-
+.footerindex{
+  color: #827f7f;
+}
 .sidebar {
   position: fixed;
   top: 69px;
