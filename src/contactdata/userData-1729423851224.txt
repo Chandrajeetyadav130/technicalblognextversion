@@ -1,9 +1,0 @@
-{
-  "method": "POST",
-  "headers": {
-    "Access-Control-Allow-Origin": "https://technicalblognextversion.netlify.app",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Methods": "GET, POST, OPTIONS"
-  },
-  "body": "{\"name\":\"newcontact\",\"email\":\"new@gmail.com\",\"phone\":\"929292929929292\"}"
-}

@@ -2,6 +2,19 @@ import fs from 'fs';
 import path from 'path';
 
 export default function handler(req, res) {
+    // Set CORS headers
+    res.setHeader('Access-Control-Allow-Origin', 'https://technicalblognextversion.netlify.app'); // Allow your deployed site
+    res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS'); // Allowed methods
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type'); // Allowed headers
+
+    // Handle preflight OPTIONS request
+    if (req.method === 'OPTIONS') {
+        res.status(200).end(); // Respond with 200 for preflight requests
+        return;
+    }
+
+
+
     if (req.method === 'POST') {
         try {
             const userData = req.body; // Get the data from the request body
