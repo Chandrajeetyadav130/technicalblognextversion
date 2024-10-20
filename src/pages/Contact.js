@@ -21,6 +21,8 @@ const Contact = () => {
       {
         method: "POST",
         headers: {
+          'Access-Control-Allow-Origin': 'https://technicalblognextversion.netlify.app',
+          'Access-Control-Allow-Methods': 'POST',
           'Content-Type': 'application/json'
         },
         body: JSON.stringify(data)
