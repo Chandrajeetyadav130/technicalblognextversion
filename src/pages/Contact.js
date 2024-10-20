@@ -14,10 +14,8 @@ const Contact = () => {
   const { register, handleSubmit,reset, formState: { errors } } = useForm({mode: "onChange",defaultval});
 
   const onSubmit = (data) => {
-
     console.log(data);
-    axios.post("http://localhost:3000/api/postContact/",
-
+    axios.post("https://technicalblognextversion.netlify.app",
       {
         method: "POST",
         headers: {
