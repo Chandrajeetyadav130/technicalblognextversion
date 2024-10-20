@@ -3,7 +3,6 @@ import axios from 'axios'
 
 import styles from "@/styles/Contact.module.css";
 import { useForm } from 'react-hook-form';
-// http://localhost:3000/api/postContact/
 const Contact = () => {
 
   let defaultval={
@@ -17,7 +16,7 @@ const Contact = () => {
   const onSubmit = (data) => {
 
     console.log(data);
-    axios.post("https://technicalblognextversion.netlify.app",
+    axios.post("http://localhost:3000/api/postContact/",
 
       {
         method: "POST",
@@ -56,7 +55,6 @@ const Contact = () => {
             {...register("email", {
               required: "Email is required",
               pattern: {
-                
                 value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
                 message: "Email is not valid",
               },
@@ -83,7 +81,7 @@ const Contact = () => {
 
 
           />
-          {errors.phone && <p className={styles.ContactErrorr}>Please provide valid phone number .</p>}
+          {errors.phone && <p>Please provide valid phone number .</p>}
 
         </div>
         <div className={styles.inputcontainer}>
