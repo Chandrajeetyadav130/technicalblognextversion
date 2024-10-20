@@ -15,7 +15,7 @@ const Contact = () => {
 
   const onSubmit = (data) => {
     console.log(data);
-    axios.post("https://technicalblognextversion.netlify.app/",
+    axios.post("http://localhost:3000/api/postContact/",
       {
         method: "POST",
         headers: {

@@ -2,7 +2,7 @@ import Head from "next/head";
 // import Image from "next/image";
 import localFont from "next/font/local";
 import styles from "@/styles/Home.module.css";
-
+import HomePageContent from "./HomePageContent";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -27,25 +27,8 @@ export default function Home() {
       <div
         className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
       >
-        <main className={styles.main}>
-        <h1>Welcome to my blogs</h1>
-        
+        <HomePageContent />
 
-          <div className={styles.ctas}>
-          <h2>Popular blogs</h2>
-          </div>
-          <div className="blogscontainer">
-            <h3>Interview questions on Javascript</h3>
-            <p>Define different types of function in Javascript</p>
-          </div>
-        </main>
-        <footer className={styles.footer}>
-       
-        <p className={styles.footerindex}>chandrajeet130 techblog Copyright © 2024 </p>
-          
-           
-     
-        </footer>
       </div>
     </>
   );

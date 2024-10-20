@@ -48,6 +48,7 @@ const Navbar = () => {
         </ul>
 
         }
+        <span className={styles.navBrand}>Tech Stack</span>
 
 
       </nav>

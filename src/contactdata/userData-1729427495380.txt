@@ -1,0 +1,7 @@
+{
+  "method": "POST",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": "{\"name\":\"chaerrber\",\"email\":\"change@gmail.com\",\"phone\":\"8328388383838\"}"
+}

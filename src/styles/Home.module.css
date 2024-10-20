@@ -89,10 +89,23 @@ a.secondary {
   border-color: var(--gray-alpha-200);
   min-width: 180px;
 }
-
+.navBrand{
+  color: #f2f2f2;
+}
 .footer {
   grid-row-start: 3;
   display: flex;
+  justify-content: center;
+  height: 80px;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  box-shadow: 0px 0px 7px rgba(200, 198, 198, 0.5);
+  background-color: rgb(126 34 206);
+  z-index: 100000;
+
+
   gap: 24px;
 }
 
@@ -164,7 +177,10 @@ a.secondary {
   width: 100%; /* Expands the border from left to right on hover */
 }
 .footerindex{
-  color: #827f7f;
+  color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+
 }
 .sidebar {
   position: fixed;
@@ -186,6 +202,9 @@ a.secondary {
   list-style: none;
 
   font-size: 14px;
+}
+.homePageBlogLink{
+  color:  rgb(126 34 206);;
 }
 .navbarhambergerAndClose{
   display: flex; 

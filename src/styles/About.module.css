@@ -1,0 +1,15 @@
+.aboutpage{
+    padding: 100px;
+    width: 100%;
+}
+.aboutpage>p{
+ margin-top: 10px;
+}
+.aboutpage>h2{
+    margin-top: 10px;
+   }
+@media(max-width:600px){
+    .aboutpage{
+        padding: 100px 15px;
+    }  
+}
