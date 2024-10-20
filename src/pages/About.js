@@ -11,7 +11,7 @@ const About = () => {
      <h2>Tutorials for Developers</h2>
      <p>
 Offer step-by-step tutorials on various web development topics, such as frontend and backend development, full-stack projects, or API integration.
-Your tutorials focus on practical, real-world applications, helping readers build their skills through hands-on learning.
+my tutorials focus on practical, real-world applications, helping readers build their skills through hands-on learning.
      </p>
     </div>
   )

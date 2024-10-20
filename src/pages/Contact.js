@@ -42,10 +42,10 @@ const Contact = () => {
           <label htmlFor='name'>Name</label>
           <input className={styles.conntactInput}
             id="name"
-            {...register("name", { required: true, maxLength: 20 })}
+            {...register("name", { required: true, maxLength: 100 })}
 
           />
-          {errors.name && <p className={styles.ContactErrorr}>Name is required and should not exceed 20 characters.</p>}
+          {errors.name && <p className={styles.ContactErrorr}>Name is required and should not exceed 100 characters.</p>}
         </div>
         <div className={styles.inputcontainer}>
           <label htmlFor='email'>Email</label>
@@ -79,7 +79,7 @@ const Contact = () => {
 
 
           />
-          {errors.phone && <p>Please provide valid phone number .</p>}
+          {errors.phone && <p className={styles.ContactErrorr}>Please provide valid phone number .</p>}
 
         </div>
         <div className={styles.inputcontainer}>
