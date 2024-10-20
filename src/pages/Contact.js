@@ -3,6 +3,7 @@ import axios from 'axios'
 
 import styles from "@/styles/Contact.module.css";
 import { useForm } from 'react-hook-form';
+// http://localhost:3000/api/postContact/
 const Contact = () => {
 
   let defaultval={
@@ -16,13 +17,11 @@ const Contact = () => {
   const onSubmit = (data) => {
 
     console.log(data);
-    axios.post("http://localhost:3000/api/postContact/",
+    axios.post("https://technicalblognextversion.netlify.app",
 
       {
         method: "POST",
         headers: {
-          'Access-Control-Allow-Origin': 'https://technicalblognextversion.netlify.app',
-          'Access-Control-Allow-Methods': 'POST',
           'Content-Type': 'application/json'
         },
         body: JSON.stringify(data)
