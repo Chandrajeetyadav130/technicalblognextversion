@@ -26,7 +26,7 @@ export default function Page(props) {
 
   return (
     <div className={styles.slugcontainer} >
-      <h3>{blogs && blogs?.title}</h3>
+      <h3 style={{textAlign:'center',margin:"10px 10px",fontSize:"24px"}}>{blogs && blogs?.title}</h3>
       {blogs &&  <div dangerouslySetInnerHTML={markup(blogs?.content)} ></div>}
 
     </div>
@@ -41,8 +41,6 @@ export async function getStaticPaths() {
       { params: { slugs: 'javascriptblog' } },
       { params: { slugs: 'nextjsblog' } },
       { params: { slugs: 'reactjsblog' } },
-      { params: { slugs: 'typecriptblog' } },
-      { params: { slugs: 'pythonblog' } },
       { params: { slugs: 'mongodbblog' } },
       { params: { slugs: 'htmlblog' } },
       { params: { slugs: 'es6blog' } },

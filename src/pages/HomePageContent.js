@@ -7,9 +7,9 @@ const HomePageContent = () => {
 
     <>
       <main className={styles.main}>
-        {/* <h1>Welcome to Technical Stack</h1> */}
+        <h1>Welcome to Technical Stack</h1>
         <h2>Here you can learn about all the latest technologies like MERN stack Nextjs</h2>
-        <p>Your blog covers the latest trends and updates in web development, keeping readers informed about new frameworks, libraries, and tools.
+        <p>This blog covers the latest trends and updates in web development, keeping readers informed about new frameworks, libraries, and tools.
         You provide detailed breakdowns of technologies like React, Next.js, Node.js, and others, helping both beginners and seasoned developers stay up-to-date.</p>
 
         <div className={styles.ctas}>

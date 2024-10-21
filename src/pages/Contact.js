@@ -1,6 +1,6 @@
 import React from 'react'
-import axios from 'axios'
-
+// import axios from 'axios'
+import Link from 'next/link';
 import styles from "@/styles/Contact.module.css";
 import { useForm } from 'react-hook-form';
 const Contact = () => {
@@ -15,21 +15,23 @@ const Contact = () => {
 
   const onSubmit = (data) => {
     console.log(data);
-    axios.post("http://localhost:3000/api/postContact/",
-      {
-        method: "POST",
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data)
-      }
-    ).then((val) => {
-      console.log("contact useHookForm", val)
-      alert("Response submitted successfully ")
-      reset()
-    }).catch((error) => {
-      console.log(error)
-    })
+    window.alert("form submitted successful")
+    reset()
+    // axios.post("http://localhost:3000/api/postContact/",
+    //   {
+    //     method: "POST",
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //     },
+    //     body: JSON.stringify(data)
+    //   }
+    // ).then((val) => {
+    //   console.log("contact useHookForm", val)
+    //   alert("Response submitted successfully ")
+    //   reset()
+    // }).catch((error) => {
+    //   console.log(error)
+    // })
   };
   // console.log(errors?.email?.message)
   return (
